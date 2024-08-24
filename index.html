@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Minor Project</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href= "https://erp.svvv.edu.in/Images/login-img.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="particles-js" class="snow"></div>
+  <div class="main">
+    <div class="login">
+      <h2 id="page_title">Login</h2>
+      <div class="inputBx">
+        <input type="text"id="user_inp" placeholder="Enter Username">
+      </div>
+      <div class="inputBx">
+        <input type="text" id="mail_inp" placeholder="Enter Gmail">
+      </div>
+      <div class="inputBx">
+        <input type="password" id="pass_inp" placeholder="Enter Password">
+      </div>
+      <div class="inputBx">
+        <input type="submit" id="Sign" value="Sign in">
+      </div>
+      <div class="links">
+        <a id="create_new" >Do no have an account?</a>
+      </div>
+    </div>
+  </div>
+  <div class="rootdiv">
+    <div class1="profile">
+      <img id="profile" class="img_" src="./Dependencies/profile.png" style="width: 25vw;" alt="">
+    </div>
+    <div class="otp-form">
+      <!-- Mobile OTP Form -->
+      <form class="mobile-otp">
+        <h2>OAuth Verification</h2>
+        <div class="otp-container">
+          <!-- Six input fields for OTP digits -->
+          <input type="text" class="otp-input" pattern="\d" maxlength="1">
+          <input type="text" class="otp-input" pattern="\d" maxlength="1" disabled>
+          <input type="text" class="otp-input" pattern="\d" maxlength="1" disabled>
+          <input type="text" class="otp-input" pattern="\d" maxlength="1" disabled>
+          <input type="text" class="otp-input" pattern="\d" maxlength="1" disabled>
+          <input type="text" class="otp-input" pattern="\d" maxlength="1" disabled>
+        </div>
+        <!-- Button to verify OTP -->
+        <button type="button" id="verifyMobileOTP">VERIFY &amp; PROCEED</button>
+      </form>
+      <div class="svg-container" id="check">    
+        <svg class="ft-green-tick" xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 48 48" aria-hidden="true">
+            <circle class="circle" id="circle" fill="#5bb543" cx="24" cy="24" r="22"/>
+            <path class="tick" id="tick" fill="none" stroke="#FFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14 27l5.917 4.917L34 17"/>
+        </svg>
+      </div>
+
+      <!-- Email OTP Form -->
+      <form class="email-otp">
+          <h2>Email OTP</h2>
+          <div class="email-otp-container">
+            <!-- Six input fields for OTP digits -->
+            <input type="text" class="email-otp-input" pattern="\d" maxlength="1">
+            <input type="text" class="email-otp-input" pattern="\d" maxlength="1" disabled>
+            <input type="text" class="email-otp-input" pattern="\d" maxlength="1" disabled>
+            <input type="text" class="email-otp-input" pattern="\d" maxlength="1" disabled>
+            <input type="text" class="email-otp-input" pattern="\d" maxlength="1" disabled>
+            <input type="text" class="email-otp-input" pattern="\d" maxlength="1" disabled>
+          </div>
+          <!-- Button to verify OTP -->
+          <button type="button" id="verifyEmailOTP">VERIFY &amp; PROCEED</button>
+      </form>
+      <div class="svg-container" id="check1">    
+        <svg class="ft-green-tick" xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 48 48" aria-hidden="true">
+            <circle class="circle" id="circle1" fill="#5bb543" cx="24" cy="24" r="22"/>
+            <path class="tick" id="tick1" fill="none" stroke="#FFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14 27l5.917 4.917L34 17"/>
+        </svg>
+      </div>
+      <div class="welcome">Welcome</div>
+    </div>
+  </div>  
+
+  <script src="./Dependencies/particles.min.js"></script>
+  <script src="./Dependencies/totp.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init('bPfR9eGYRUTrG6EEf');</script>
+  <script  src="./script.js"></script>
+</body>
+</html>
